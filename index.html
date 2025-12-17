@@ -2,159 +2,186 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sachin | n8n Automation Portfolio</title>
-  <meta name="description" content="n8n Automation Developer Portfolio – Workflows, Integrations, AI Automations" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>n8n Automation Portfolio | Future-Ready Workflows</title>
+
   <style>
     :root {
       --bg: #0f172a;
       --card: #111827;
       --text: #e5e7eb;
       --muted: #9ca3af;
-      --accent: #22c55e;
+      --accent: #38bdf8;
     }
+
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: linear-gradient(120deg, #020617, #0f172a);
+      font-family: Inter, system-ui, Arial, sans-serif;
+      background: linear-gradient(180deg, #020617, #020617);
       color: var(--text);
     }
+
     header {
-      padding: 64px 20px;
+      padding: 50px 20px;
       text-align: center;
+      border-bottom: 1px solid #1f2933;
     }
+
     header h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       margin-bottom: 10px;
+      color: var(--accent);
     }
+
     header p {
-      color: var(--muted);
-      max-width: 700px;
+      max-width: 900px;
       margin: auto;
-      font-size: 1.1rem;
+      color: var(--muted);
+      font-size: 1.05rem;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 24px;
-      padding: 12px 22px;
-      background: var(--accent);
-      color: #022c22;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: 600;
-    }
-    section {
-      max-width: 1100px;
+
+    .container {
+      max-width: 1300px;
       margin: auto;
       padding: 40px 20px;
     }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 24px;
-      text-align: center;
-    }
+
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
     }
+
     .card {
-      background: var(--card);
-      border-radius: 16px;
-      padding: 22px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.3);
+      background: linear-gradient(180deg, #020617, #020617);
+      border: 1px solid #1f2937;
+      border-radius: 14px;
+      padding: 16px;
+      transition: transform .25s ease, box-shadow .25s ease;
     }
-    .card h3 {
-      margin-top: 0;
-      color: var(--accent);
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 40px rgba(56,189,248,.15);
     }
-    .card p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-    .tags span {
-      display: inline-block;
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
       background: #020617;
-      border: 1px solid #1f2933;
-      padding: 6px 10px;
-      margin: 6px 6px 0 0;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      color: var(--muted);
+      border: 1px solid #1f2937;
     }
+
+    .card h3 {
+      margin: 14px 0 6px;
+      font-size: 1.1rem;
+      color: #e5e7eb;
+    }
+
+    .card p {
+      font-size: .95rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
     footer {
       text-align: center;
-      padding: 30px 20px;
+      padding: 30px;
       border-top: 1px solid #1f2937;
       color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: .75rem;
+      color: #020617;
+      background: var(--accent);
+      padding: 4px 8px;
+      border-radius: 6px;
+      margin-top: 10px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>⚙️ n8n Automation Portfolio</h1>
-  <p>I design scalable workflow automations using n8n, AI, APIs, CRMs, email systems, and cloud services.</p>
-  <a class="btn" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">View GitHub</a>
+  <h1>n8n Automation Portfolio</h1>
+  <p>
+    A curated collection of scalable, AI-powered and enterprise-grade automation workflows
+    built using <strong>n8n</strong>, designed for high-demand use cases through 2030.
+  </p>
 </header>
 
-<section>
-  <h2>Featured Workflows</h2>
+<div class="container">
   <div class="grid">
-    <div class="card">
-      <h3>Email Outreach Automation</h3>
-      <p>Zoho + Google Sheets + Bounce detection + auto follow-ups using n8n.</p>
-      <div class="tags">
-        <span>Zoho Mail</span><span>n8n</span><span>Sheets</span><span>SMTP</span>
-      </div>
-    </div>
-    <div class="card">
-      <h3>AI Resume & ATS Checker</h3>
-      <p>LLM-based resume parsing, ATS scoring, and automated candidate replies.</p>
-      <div class="tags">
-        <span>OpenAI</span><span>ATS</span><span>HR Tech</span>
-      </div>
-    </div>
-    <div class="card">
-      <h3>Webhook → CRM Sync</h3>
-      <p>Secure webhooks that normalize and sync data across CRMs.</p>
-      <div class="tags">
-        <span>Webhook</span><span>REST API</span><span>CRM</span>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section>
-  <h2>Skills & Stack</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Automation</h3>
-      <p>n8n, Zapier-like flows, Cron jobs, error handling</p>
-    </div>
-    <div class="card">
-      <h3>APIs</h3>
-      <p>REST, OAuth2, Webhooks, JSON, GraphQL basics</p>
-    </div>
-    <div class="card">
-      <h3>AI</h3>
-      <p>OpenAI, Gemini, prompt engineering, classification, extraction</p>
-    </div>
-  </div>
-</section>
+    <!-- PROJECT CARD TEMPLATE -->
+    <!-- Duplicate & update image file names if needed -->
 
-<section>
-  <h2>Contact</h2>
-  <div class="card" style="max-width:600px;margin:auto;text-align:center;">
-    <p>📧 Email: your@email.com</p>
-    <p>🔗 GitHub: github.com/YOUR_GITHUB_USERNAME</p>
-    <p>💼 Open to freelance & remote work</p>
+    <script>
+      const projects = [
+        ["Unified Customer 360 Sync", "Centralized customer data sync across CRM, support, billing, and analytics platforms."],
+        ["Real-time Conversational AI Router", "Routes chats, emails, and tickets to specialized AI models with full context."],
+        ["Event-driven Data Warehouse ETL (CDC)", "Real-time change-data capture pipelines for analytics and ML readiness."],
+        ["AI Resume & Candidate Screening", "Automated resume parsing, scoring, ATS updates, and interview scheduling."],
+        ["Compliance & Audit Trail Generator", "Tamper-proof approval logs and compliance-ready audit reports."],
+        ["Smart Invoice & AP Automation", "OCR-based invoice validation, approvals, and payment reconciliation."],
+        ["Customer Health Scoring & Churn Alerts", "Predictive churn detection with automated retention playbooks."],
+        ["Usage-based SaaS Billing", "Metered usage aggregation and automated billing workflows."],
+        ["Social Media Scheduler & Analytics", "Multi-platform scheduling with engagement insights."],
+        ["Security Alert Triage", "Context-enriched security alerts with automated incident handling."],
+        ["Supplier & Procurement Automation", "End-to-end purchase order and supplier lifecycle automation."],
+        ["GDPR / CCPA Data Requests", "Automated personal data access, export, and deletion workflows."],
+        ["Marketing A/B Test Orchestrator", "Automated campaign experiments and performance optimization."],
+        ["ML Feature Pipeline & Retraining", "Data drift detection and automated ML retraining triggers."],
+        ["E-commerce Order Exception Handler", "Payment failures, inventory issues, and fulfillment alerts."],
+        ["OKR & Progress Aggregator", "Cross-team progress tracking and risk escalation dashboards."],
+        ["Investor & Board Reporting", "Auto-generated KPI reports and executive dashboards."],
+        ["AI Customer Support Assistant", "Ticket summarization and AI-drafted replies for agents."],
+        ["IoT Fleet Monitoring", "Predictive maintenance alerts from IoT telemetry streams."],
+        ["Content Localization Automation", "AI-powered multilingual content publishing pipelines."],
+        ["Recruiter Outreach Sequencer", "Automated candidate sourcing and personalized follow-ups."],
+        ["Legal Document Extraction", "Clause extraction and legal risk identification."],
+        ["Subscription Renewal Optimizer", "Automated renewals, upsell, and churn prevention."],
+        ["Knowledge Base Auto-Updater", "Transforms resolved tickets into help articles."],
+        ["Lead Enrichment & Scoring", "Firmographic enrichment and sales prioritization."],
+        ["Legal Hold & E-Discovery", "Automated litigation data preservation."],
+        ["Price Monitoring & Alerts", "Competitor and regulatory price change tracking."],
+        ["Inbox Zero Productivity Bot", "Email triage, auto-replies, and task creation."],
+        ["Grants & Funding Tracker", "Funding discovery, deadline alerts, and submission tracking."],
+        ["Green Ops Carbon Tracking", "Cloud usage to carbon footprint automation."],
+        ["WhatsApp Sentiment Analysis", "Customer sentiment detection via WhatsApp conversations."],
+        ["AI Language Translator", "Multi-language translation automation using AI models."],
+        ["Zoho Mail Automation & Bounce Handling", "Vendor & customer email lifecycle management."],
+        ["Document Generator from Sheets + Scraping", "Automated document creation from scraped data."],
+        ["Google Search + Mail Automation", "Triggered outreach based on Google search insights."],
+        ["n8n Chatbot Development", "Custom AI chatbots integrated into business systems."],
+        ["RAG Automation using n8n", "Retrieval-augmented generation workflows with vector databases."]
+      ];
+
+      document.write(
+        projects.map((p, i) => `
+          <div class="card">
+            <img src="images/project-${i+1}.png" onerror="this.src='images/placeholder.png'"/>
+            <h3>${i+1}. ${p[0]}</h3>
+            <p>${p[1]}</p>
+            <span class="tag">n8n Workflow</span>
+          </div>
+        `).join("")
+      );
+    </script>
+
   </div>
-</section>
+</div>
 
 <footer>
-  <p>© 2025 Sachin – n8n Automation Developer</p>
+  © 2025 • n8n Automation Portfolio • Built for AI-first, scalable workflows
 </footer>
 
 </body>
